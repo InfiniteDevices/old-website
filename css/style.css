@@ -94,7 +94,7 @@ canvas {
 /*header start here*/
 
 section.header:after {
-	position: relative;
+	position: absolute;
 	content: '';
 	background-repeat: no-repeat;
 	width: 100%;
@@ -110,7 +110,6 @@ section.header {
 	position: relative;
 	z-index: 999999;
 	background-repeat: no-repeat;
-	background-size:100%;
 	background-size: cover;
 	background: #310770;
 }
@@ -131,6 +130,7 @@ section.header {
 	background-size: cover;
 	z-index: 91;
 	background-position: 0 -90px;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/148.jpg");
 }
 .nav-header {
 	padding-top: 30px;
