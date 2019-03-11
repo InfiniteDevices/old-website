@@ -135,7 +135,7 @@ section.header {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/148.jpg");
 }
 .nav-header {
-	padding-top: 30px;
+	padding-top: 15px;
 }
 .header-bottom {
 	margin: 124px 0 !important;
@@ -175,7 +175,7 @@ section.header {
 	border: 1px solid var(--blue);
 }
 .header_area ul.nav-menu {
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
 	position: relative;
   right: -70px;
   top: 0px;
