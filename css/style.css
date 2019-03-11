@@ -104,7 +104,7 @@ section.header:after {
 	background-size: cover;
 	height: 90px;
 	z-index: 90;
-	background-color: #310770;
+	background-color: #340538;
 	border-top: 1px solid #f2f2f2;
 }
 section.header {
@@ -112,15 +112,15 @@ section.header {
 	z-index: 999999;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: #310770;
+	background-color: #340538;
 }
 .header_area {
 	z-index: 999999;
 	padding: 15px 0 0 0;
-	background-color:#310770;
+	background-color: #340538;
 	position: fixed;
 	top: 0px;
-	height: 157px;
+	height: 125px;
 	width: 100%;
 	border-bottom: 1px solid #f2f2f2;
 }
@@ -138,7 +138,7 @@ section.header {
 	padding-top: 30px;
 }
 .header-bottom {
-	margin: 156px 0 !important;
+	margin: 124px 0 !important;
 	position: relative;
 	z-index: 91;
 	padding-bottom: 200px !important;
@@ -1209,22 +1209,10 @@ transition: all 500ms ease-in-out;
 
 /*================================Princing Inner page end here ===================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
 .service-inner::before,.service-inner::after{display: none;}
 
 /*======================= responsive start here==============*/
-@media (max-width: 1600px) {
+@media (max-width: 4800px) {
 #particles-js {
 background-position: right;
     background-size: 80%;
@@ -1342,7 +1330,7 @@ box-shadow: 0 0.5em 0 0 #ffffff, 0 1em 0 0 #fafcff;
 	text-align: center;
 }
 section.header::after {
-	bottom: -190px;
+	bottom: -90px;
 }
 .demand .boxx {
 	padding: 0px !important;
@@ -1425,7 +1413,7 @@ section.try {
 	text-align: center;
 }
 section.header::after {
-	bottom: -190px;
+	bottom: -90px;
 }
 .demand .boxx {
 	padding: 0px !important;
