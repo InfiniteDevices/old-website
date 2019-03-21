@@ -494,8 +494,9 @@ section.header {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  padding-top: 50px;
-  padding-bottom: 20px;
+}
+.what h3 {
+    padding-bottom: 20px;
 }
 .what {
   position: relative;
