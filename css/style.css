@@ -501,7 +501,8 @@ section.header {
 .what {
   position: relative;
   background-color: #fff;
-  margin: 140px 0 0 0;
+  /* margin: 140px 0 0 0; */
+  margin-bottom: 40px;
   border-bottom: 0px solid #222d62;
 }
 .what .box a:hover {
@@ -904,7 +905,7 @@ footer .footer-4 li:nth-child(3) {
   padding-bottom: 100px;
 }
 .servicesone {
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 .teamone p {
   color: #666;
@@ -990,8 +991,6 @@ footer .footer-4 li:nth-child(3) {
   display: inline-block !important;
 }
 .discoverone {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .discoverone h1 {
   text-transform: uppercase;
