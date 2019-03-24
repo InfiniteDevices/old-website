@@ -1,3 +1,13 @@
 User-agent: *
-Disallow:
+Disallow: /about.html
+Disallow: /contact_form.html
+Disallow: /legal.html
+Disallow: /privacy-policy.html
+Disallow: /saas-terms.html
+
+
 Noindex: /about.html
+Noindex: /contact_form.html
+Noindex: /legal.html
+Noindex: /privacy-policy.html
+Noindex: /saas-terms.html
