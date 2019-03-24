@@ -1245,26 +1245,11 @@ footer .footer-4 li:nth-child(3) {
 .entry-content li:last-child {
   border: none;
 }
-
-.btn {
-  padding: 3em 0;
-  text-align: center;
-}
-
-.btn a {
-  background: #323232;
-  padding: 10px 30px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 15px;
-  max-width: 150px;
-  margin: 0 auto;
+.send-button{
+width:100%;
+font-weight: 600;
+color:#fff;
+padding: 8px 25px;
 }
 .hot {
   position: absolute;
@@ -1827,3 +1812,4 @@ footer .footer-4 li:nth-child(3) {
 .pricing-button.is-featured:active {
   background-color: #269aff;
 }
+
