@@ -99,7 +99,9 @@ nav,
 section {
   display: block;
 }
-ol,
+ol {
+   padding-left: 2em;
+}
 ul {
   list-style: none;
 }
