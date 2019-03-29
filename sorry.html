@@ -35,35 +35,6 @@
   </head>
 
   <body>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-      // Parse the URL parameter
-      function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-          results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return "";
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-      }
-      // Give the parameter a variable name
-      var dynamicContent = getParameterByName("error");
-
-      $(document).ready(function() {
-        console.log(dynamicContent);
-
-        // Check if the URL parameter is apples
-        if (dynamicContent) {
-          $("#validation_errors").show();
-          $("#validation_errors").html(dynamicContent);
-        }
-      });
-    </script>
     <!--header start here-->
     <section class="header">
       <div id="particles-js" class="particles-js"></div>
@@ -126,95 +97,36 @@
     </section>
     <section class="what" style="margin-top: 140px;">
       <div class="container">
-        <div class="discoverone what-inner text-left">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-4 mx-auto">
-                  <div class="myform form ">
-                    <h1
-                      style="padding-bottom: 50px; margin-bottom: 0px; margin-top: 50px;"
-                    >
-                      Sign up
-                    </h1>
-                    <div
-                      id="validation_errors"
-                      class="alert alert-danger"
-                      role="alert"
-                      style="display: none;"
-                    >
-                      This is a danger alert—check it out!
-                    </div>
-                    <form
-                      action="https://my.infinimesh.io/api/signup"
-                      method="post"
-                      name="login"
-                      oninput="password_confirm.setCustomValidity(password_confirm.value != password.value ? &quot;Passwords do not match.&quot; : &quot;&quot;)"
-                    >
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="username"
-                          class="form-control my-input"
-                          id="username"
-                          placeholder="Username"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          name="email"
-                          class="form-control my-input"
-                          id="email"
-                          placeholder="Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          name="password"
-                          class="form-control my-input"
-                          id="password"
-                          placeholder="Password"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          name="password_confirm"
-                          class="form-control my-input"
-                          id="password_confirm"
-                          placeholder="Confirm Password"
-                        />
-                      </div>
-                      <div class="text-center form-group">
-                        <button
-                          type="submit"
-                          class=" btn btn-primary btn-block send-button tx-tfm"
-                        >
-                          Create Your Free Account
-                        </button>
-                      </div>
-                      <p class="small mt-3">
-                        By signing up, you are indicating that you have read and
-                        agree to the
-                        <a href="saas-terms.html" class="ps-hero__content__link" target="_blank"
-                          >Terms of Use</a
-                        >
-                        and <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
-                      </p>
-                    </form>
-                  </div>
-                </div>
-              </div>
+        <div class="discoverone what-inner text-center">
+            <div class="row">
+                <div class="col-md-12">
+                  <h2>SORRY!</h2>
+                  <h5>node127 reports: Maintenance information</h5>
+                  <hr>
+                  <h5>Our operator has to inform that infinidesk, infinimesh's graphical interface, is not responsible.</h5>
+                </div><br><br>
+                <div class="col-md-12 text-left">
+                  <h5><br><br>
+                    Thank you for your interest in our IoT platform's graphical interface. We work hard to bring infinidesk online in a couple of weeks, planned in 4 - 6 sprints á 2 weeks. </h5><br>
+                    Please note that infinimesh works perfectly with our CLI and API, but please also bear in mind that we have announced a public alpha. That means the system is online and stable, but might
+                    miss some features or addons.<br>
+                    Please follow our <a href="https://www.github.com/infinimesh/infinimesh" target="_blank">Git Repo</a> or <a href="https://infinimesh.github.io/infinimesh/swagger-ui/" target="_blank">Swagger Playground</a>
+                    for development ready code and Documentation. More userfriendly
+                    <a href="https://infinimesh.github.io/infinimesh/docs" target="_blank">Documentation</a> will follow ASAP, as well as more features. To get access to the platform and start
+                    your journey please <a href="signup.html">Sign Up</a>. After you have gotten your credentials you can start to play directly per API or simply use our
+                    <a href="https://infinimesh.github.io/infinimesh/swagger-ui/" target="_blank">Swagger Playground</a>.
+                    <br><br>
+                    Again, please sorry for any inconvenience the missing UI has caused and follow us closely over our <a href="contact.html">contact channel</a>.
+
+
+
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </section>
-
     <!--footer start here-->
-    <footer style="margin-top: 80px;">
+    <footer>
       <div class="container">
         <div class="footer-top">
           <div class="row">
