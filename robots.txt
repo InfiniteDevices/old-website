@@ -1,14 +1,14 @@
 User-agent: *
 
 Disallow: /sorry.html
-Disallow: /about.html
+Disallow: /team.html
 Disallow: /contact_form.html
 Disallow: /legal.html
 Disallow: /privacy-policy.html
 Disallow: /saas-terms.html
 
 Noindex: /sorry.html
-Noindex: /about.html
+Noindex: /team.html
 Noindex: /contact_form.html
 Noindex: /legal.html
 Noindex: /privacy-policy.html
