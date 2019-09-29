@@ -1323,6 +1323,7 @@ padding: 8px 25px;
       position: relative;
       padding-bottom: 0px !important;
       margin-top: 0px;
+      margin: 10px 0 !important;
       top: 120px;
     }
   .navigation-portrait .nav-menu > li > a {
@@ -1462,6 +1463,7 @@ padding: 8px 25px;
       padding-bottom: 0px !important;
       margin-top: 0px;
       top: 0px;
+      margin: 10px 0 !important;
       padding: 50px 0px 0px 0px !important;
     }
     .header_area {
