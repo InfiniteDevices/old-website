@@ -187,19 +187,6 @@ canvas {
 
 /*header start here*/
 
-section.header:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0px;
-  background-size: ;
-  height: 2px;
-  z-index: 90;
-  background-color: #130013;
-  border-top: 1px solid #f2f2f2;
-}
 section.header {
   position: relative;
   z-index: 999999;
@@ -223,7 +210,7 @@ section.header {
   height: 100%;
   min-width: 100vh;
   min-height: 30vh;
-  background-color: #240025;
+  background-color: #130013;
   background-size: cover;
   background-attachment:scroll;
   background-repeat: no-repeat;
@@ -232,9 +219,10 @@ section.header {
 }
 .nav-header {
   padding-top: 15px;
+  padding-left: -10px;
 }
 .header-bottom {
-  margin: 110px 0 !important;
+  margin: 160px 0 !important;
   position: relative;
   z-index: 91;
   padding-bottom: 0px !important;
@@ -273,11 +261,11 @@ section.header {
 .header_area ul.nav-menu {
   margin: 40px 0 0 0;
   position: relative;
-  right: 70px;
+  left: 50px;
   top: 0px;
 }
 .nav-menu > li > a {
-  font-size: 18px;
+  font-size: 14px;
   padding: 0 15px;
   height: auto;
 }
@@ -1314,48 +1302,29 @@ padding: 8px 25px;
 }
 
 /*======================= responsive start here==============*/
-@media (max-width: 4800px) {
-  #header_bg {
-    background-position: right;
-    background-size: 100%;
-  }
-  .header-bottom {
-    padding-top: 0px !important;
-  }
-}
 
-@media (max-width: 1440px) {
-  .try img {
-    margin: 550px 0 0 0px;
-  }
-  .try h2 {
-    margin: 600px 0 0 0;
-  }
-}
-
-@media (max-width: 1366px) {
-  .try h2 {
-    margin: 580px 0 0 0 !important;
-    font-size: 40px !important;
-  }
-  .service-inner::before {
-    left: -60px;
-    top: 50px;
-  }
-  .service-inner::after {
-    right: -60px;
-    bottom: -42px;
-  }
-  .try a {
-    margin: 0px !important;
-  }
-
-  .try p {
-    margin: 10px 0px !important;
-  }
-}
 
 @media (max-width: 1200px) {
+  #header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 50vh;
+    min-height: 30vh;
+    }
+    section.header {
+      position: relative;
+      z-index: 200;
+      background-color: #130013;
+      height: 850px;
+    }
+    .header-bottom {
+      z-index: 300;
+      position: relative;
+      padding-bottom: 0px !important;
+      margin-top: 0px;
+      top: 120px;
+    }
   .navigation-portrait .nav-menu > li > a {
     color: black;
     padding: 0 10px 10px 30px !important;
@@ -1368,28 +1337,32 @@ padding: 8px 25px;
     padding: 15px 0 0 0 !important;
   }
 }
-@media (max-width: 1151px) {
-  .nav-toggle:before {
-    background-color: #ffffff;
 
+@media (min-width: 992px) and (max-width: 1151px) {
+  #header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 50vh;
+    min-height: 40vh;
+    }
+    .header-bottom {
+      z-index: 300;
+      position: relative;
+      padding-bottom: 0px !important;
+      margin-top: 0px;
+      top: 80px;
+    }
+  .nav-toggle:before {
+    background-color: #02011c;
     box-shadow: 0 0.5em 0 0 #ffffff, 0 1em 0 0 #fafcff;
   }
-  .header-bottom {
-    padding-top: 0px !important;
-    padding-bottom: 20px !important;
-  }
+
   .demand .boxx {
     padding: 2px !important;
   }
   .nav-menu li a.ct {
-    margin: 0px 0px 0px 10px !important;
-  }
-  .try {
-    padding: 300px 0px 60px 0px !important;
-    background: #170d5b !important;
-  }
-  .try h2 {
-    margin: 0px 0 0 0 !important;
+    margin: 0px 0px 0px 0px !important;
   }
   .header-bottom h1 span {
     font-size: 35px;
@@ -1405,19 +1378,11 @@ padding: 8px 25px;
     right: -46px;
     bottom: -40px;
   }
-
-  .try img {
-    margin: 60px 0 0 0;
-  }
-  .try h2 {
-    margin: 230px 0 0 0;
-  }
-  .try img {
-    margin: 0;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 568px) and (max-width: 991px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
   .teamone h4 {
     padding-top: 10px;
   }
@@ -1438,18 +1403,12 @@ padding: 8px 25px;
     padding: 0px !important;
     width: 100px !important;
   }
-  .try {
-    padding: 60px 0px !important;
-  }
-  .header-bottom {
-    padding: 50px 0px 0px 0px !important;
-  }
   .header_area ul.nav-menu {
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     float: left !important;
   }
   .nav-header {
-    padding-top: 10px;
+    padding-top: 1px;
   }
   p {
     width: 100% !important;
@@ -1460,51 +1419,88 @@ padding: 8px 25px;
   .try img {
     margin: 80px 0 0 0;
   }
-  section.try {
-    background: #030314;
-    padding: 60px 0;
-  }
   .about img {
     margin: 130px 0 0 0;
   }
   .what .vid img {
     top: 50px;
   }
-  .konnect-inner {
-    padding: 150px 0 40px 0;
-  }
-  .client {
-    padding: 90px 0;
-  }
-  .konnect-inner .col-md-6 {
-    padding: 0 15px;
-  }
   .header-bottom h6 {
     padding-right: 100px !important;
   }
-  .pricingone p {
-    padding: 0px !important;
+  .nav-toggle:before {
+    box-shadow: 0 0.5em 0 0 #fff, 0 1em 0 0 #fff;
+    background: white;
   }
-
-  .pricingone {
-    padding-top: 30px;
-    padding-bottom: 20px;
+  .navigation-portrait .nav-menu > li > a {
+    color: black;
+    padding: 0 10px 10px 30px !important;
+    border: 0 !important;
+  }
+  .navigation-portrait .nav-menu > li:last-child {
+    padding: 10px 0 !important;
+  }
+  .navigation-portrait .nav-menu > li {
+    padding: 15px 0 0 0 !important;
+  }
+  .navigation-portrait .nav-brand img {
+    width: 75%;
+    height: 75%;
+    padding-top: 25px;
+  }
+  #header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 50vh;
+    min-height: 50vh;
+    top: -40px;
+    }
+    .header-bottom {
+      z-index: 300;
+      position: relative;
+      padding-bottom: 0px !important;
+      margin-top: 0px;
+      top: 0px;
+      padding: 50px 0px 0px 0px !important;
+    }
+    .header_area {
+      z-index: 900;
+      padding: 0px 0 0 0;
+      background-color: #130013;
+      position: fixed;
+      top: 0px;
+      height: 100px;
+      width: 100%;
+      border-bottom: 1px solid white;
+    }
+    h1 {
+    font-size: 50px;
+  }
+  h1 span {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 19px;
   }
 }
 
 @media (max-width: 767px) {
-  .pricingone {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  .pricingone p {
-    padding: 0px !important;
-  }
-  .plan.basic {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+
   .privacy-policy-one {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1528,47 +1524,60 @@ padding: 8px 25px;
   .header-bottom h6 {
     padding-right: 100px !important;
   }
-  .try {
-    padding: 60px 0px !important;
-  }
-  .header-bottom {
-    padding: 50px 0px 0px 0px !important;
-  }
   .header_area ul.nav-menu {
     margin: 20px 0 0 0;
     float: left !important;
   }
-  .client {
-    padding: 90px 0;
-  }
   p {
     width: 100% !important;
-  }
-  .konnect-inner {
-    padding: 20px 0;
-  }
-  .konnect-inner .col-md-6 {
-    padding: 0 15px;
-  }
-  section.try {
-    background: #030314;
-    padding: 30px 0;
-  }
-  .try h2 {
-    margin: 0 0 0 0;
-  }
-  .try img {
-    margin: 0;
-  }
-  section.client {
-    padding: 70px 0;
   }
   .what h4 {
     width: 100%;
   }
+  #header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: none !important;
+    min-width: 5vh;
+    min-height: 5vh;
+    background-color: #130013;
+  }
+  .header-bottom {
+    z-index: 300;
+    position: relative;
+    padding-bottom: 0px !important;
+    margin-top: 0px;
+    top: 50px;
+    padding: 50px 0px 0px 0px !important;
+  }
+  h1 {
+  font-size: 40px;
+}
+h1 span {
+  font-size: 25px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 19px;
+}
 }
 
 @media (max-width: 480px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+
   .privacy-policy-one p {
     padding-right: 20px;
     padding-left: 20px;
@@ -1596,16 +1605,9 @@ padding: 8px 25px;
   .what .vid img {
     top: 0px;
   }
-  .try {
-    padding: 20px 0px !important;
-  }
   .aboutone,
-  .contactone,
-  .discoverone,
-  .experienceone,
-  .pricingone,
-  .Infinimeshone,
-  .servicesone {
+  .contactone
+ {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
@@ -1613,30 +1615,22 @@ padding: 8px 25px;
   .about .header-bottom h1,
   .contacth1,
   .discover .header-bottom h1,
-  .experience .header-bottom h1,
-  .pricing .header-bottom h1,
-  .pricingpage .header-bottom h1,
-  .services .header-bottom h1,
   .aboutpage .header-bottom h1,
   .privacy-policy .header-bottom h1,
   .teampage .header-bottom h1,
   .discover .header-bottom h1,
-  .productinfinimesh .header-bottom h1,
   .contact .header-bottom h1,
   .experience .header-bottom h1 {
     font-size: 50px !important;
   }
-  .discoverone,
-  .pricingone {
+  .discoverone
+ {
     text-align: center;
   }
-  .discoverone p,
-  .pricingone p {
+  .discoverone p
+  {
     margin-bottom: 20px;
     padding: 0px 10px;
-  }
-  .pricingone h3 {
-    margin: 20px 0px 20px 0px;
   }
   .discoverone h1 {
     margin-bottom: 0px;
@@ -1645,24 +1639,29 @@ padding: 8px 25px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   .service-inner .workinner p {
     padding: 0px 0px;
   }
-
   .service-inner::after,
   .service-inner::before {
-    display: none !important;
+  display: none !important;
   }
   #header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-image: none !important;
+    min-width: 5vh;
+    min-height: 5vh;
+    background-color: #130013;
   }
 }
-@media (max-width: 375px) {
-}
 
-@media (min-width: 320px) and (max-width: 999px) {
+@media (min-width: 320px) and (max-width: 567px) {
   /*menu start here*/
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+
   .nav-toggle:before {
     box-shadow: 0 0.5em 0 0 #fff, 0 1em 0 0 #fff;
     background: white;
@@ -1680,28 +1679,54 @@ padding: 8px 25px;
   }
   /*menu end here*/
   h1 {
-    font-size: 40px;
+  font-size: 40px;
+}
+h1 span {
+  font-size: 25px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 19px;
+}
+.header_area {
+  z-index: 900;
+  padding: 20px 0 0 0;
+  background-color: #130013;
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+  .header-bottom {
+    z-index: 300;
+    position: relative;
+    padding-bottom: 0px !important;
+    margin-top: 0px;
+    top: 0px;
   }
-  h1 span {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 22px;
-  }
-  h5 {
-    font-size: 20px;
-  }
-  h6 {
-    font-size: 19px;
+  #header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: none !important;
+    min-width: 5vh;
+    min-height: 5vh;
+    background-color: #130013;
   }
 }
-/*======================= responsive start here==============*/
+/*======================= responsive end here==============*/
 
 /* Pricing */
 .panel {
