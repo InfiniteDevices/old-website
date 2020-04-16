@@ -18,7 +18,7 @@ header {
     background: #0f75bb;
 }*/
 
- 
+
 .navigation{width:100%;height:70px;display:table;position:relative;font-family:inherit;background-color:transparent;}
 .navigation *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 .navigation-portrait{height:48px}

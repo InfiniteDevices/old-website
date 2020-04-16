@@ -23,8 +23,6 @@
       href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="icon" type="image/gif" sizes="32x32" href="images/favpng.png"/>
@@ -35,35 +33,6 @@
   </head>
 
   <body>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-      // Parse the URL parameter
-      function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-          results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return "";
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-      }
-      // Give the parameter a variable name
-      var dynamicContent = getParameterByName("error");
-
-      $(document).ready(function() {
-        console.log(dynamicContent);
-
-        // Check if the URL parameter is apples
-        if (dynamicContent) {
-          $("#validation_errors").show();
-          $("#validation_errors").html(dynamicContent);
-        }
-      });
-    </script>
     <!--header start here-->
     <section class="header">
       <header class="header_area">
@@ -87,7 +56,7 @@
                     </ul>
                   </li>
                   <li><a href="https://blog.infinimesh.io/" target="_blank">Blog</a></li>
-                   
+
                 </ul>
               </div>
             </nav>
@@ -97,99 +66,124 @@
     </section>
     <div class="element"></div>
     <!--header end here-->
-      <a name="product"></a>
+    <section class="what" style="margin-top: 340px;">
+      <div class="container">
+         <div class="what-inner text-left">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="text-left">
+                     <ul>
+                        <li>
+                            <center>
+                                <h3><br><br>Public available playground</h3><br><br>
+                                </center>
+                        </li>
+                     </ul>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td>
+                                 <h5>&nbsp;Login:</h5>
+                              </td>
+                              <td>
+                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;infinimesh.io
+                                 </h5>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <h5>&nbsp;Password:</h5>
+                              </td>
+                              <td>
+                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;infinimesh.io
+                                 </h5>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <h5>&nbsp;UI:</h5>
+                              </td>
+                              <td>
+                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://console.ionos-iot.de" target="_blank" style="text-decoration: none">https://console.ionos-iot.de</a>
+                                 </h5>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <h5>&nbsp;MQTT (TLS 1.2):</h5>
+                              </td>
+                              <td>
+                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;mqtt.api.ionos-iot.de:8883
+                                 </h5>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <h5>&nbsp;API:</h5>
+                              </td>
+                              <td>
+                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;api.ionos-iot.de
+                                 </h5>
+                              </td>
+                           </tr><tr>
+                              <td>
+                                 <h5>&nbsp;Swagger-API:</h5>
+                              </td>
+                              <td>
+                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://infinitedevices.github.io/infinimesh/swagger-ui/" target="_blank"  style="text-decoration: none">https://infinitedevices.github.io/infinimesh/swagger-ui/</a>
+                                 </h5>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="what" style="margin-top: 140px;">
+      <div class="container">
+         <div class="what-inner text-left">
+            <div class="row">
+               <div class="col-md-12">
+                  <h5>
+                      You have asked and we have built - a Grafana <a href="http://dashboard.ionos-iot.de/d/UdJepIGZz/smartmeter?orgId=1&refresh=5s&kiosk" target="_blank" style="text-decoration: none">dashboard</a> connected to infinimesh IoT and
+                      one of our test devices. Please use the same credentials as for the demo system (infinimesh.io / infinimesh.io).
+                  </h5>
+               </div>
+            </div>
+         </div>
+      </div>
     </section>
     <section class="what" style="margin-top: 140px;">
       <div class="container">
-        <div class="discoverone what-inner text-left">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-4 mx-auto">
-                  <div class="myform form ">
-                    <h1
-                      style="padding-bottom: 50px; margin-bottom: 0px; margin-top: 50px;"
-                    >
-                      Sign up
-                    </h1>
-                    <div
-                      id="validation_errors"
-                      class="alert alert-danger"
-                      role="alert"
-                      style="display: none;"
-                    >
-                      This is a danger alert—check it out!
-                    </div>
-                    <form
-                      action="https://my.infinimesh.io/api/signup"
-                      method="post"
-                      name="login"
-                      oninput="password_confirm.setCustomValidity(password_confirm.value != password.value ? &quot;Passwords do not match.&quot; : &quot;&quot;)"
-                    >
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="username"
-                          class="form-control my-input"
-                          id="username"
-                          placeholder="Username"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          name="email"
-                          class="form-control my-input"
-                          id="email"
-                          placeholder="Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          name="password"
-                          class="form-control my-input"
-                          id="password"
-                          placeholder="Password"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="password"
-                          name="password_confirm"
-                          class="form-control my-input"
-                          id="password_confirm"
-                          placeholder="Confirm Password"
-                        />
-                      </div>
-                      <div class="text-center form-group">
-                        <button
-                          type="submit"
-                          class=" btn btn-primary btn-block send-button tx-tfm"
-                        >
-                          Create Your Free Account
-                        </button>
-                      </div>
-                      <p class="small mt-3">
-                        By signing up, you are indicating that you have read and
-                        agree to the
-                        <a href="saas-terms.html" class="ps-hero__content__link" target="_blank"
-                          >Terms of Use</a
-                        >
-                        and <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
-                      </p>
-                    </form>
-                  </div>
-                </div>
-              </div>
+         <div class="what-inner text-left">
+            <div class="row">
+               <div class="col-md-12">
+                  <h5>
+                      Thank you for your interest in the infinimesh IoT platform. The public available system is open to everyone, please have that in mind.<br>
+                      You can attach IoT systems, play around with the API, and test everything. Since that is a shared account for demonstration only, everyone can create, modify and delete device shadows. So we highly
+                      advise to not use the system as an demo case.<br><br>
+                      Before you start we highly encourage you to read either the <a href="https://infinitedevices.github.io/infinimesh/docs" target="_blank" style="text-decoration: none">Quick Start Guide</a> or how
+                      to use MQTTBox on Windows10 in our <a href="https://blog.infinimesh.io/2019/infinimesh-with-mqtt-box-on-windows-10/" target="_blank" style="text-decoration: none">blog</a>. <br><br>
+                      Please follow our <a href="https://www.github.com/InfiniteDevices/infinimesh" target="_blank" style="text-decoration: none">Git Repo</a> for development ready code and Documentation. More userfriendly
+                      <a href="https://infinitedevices.github.io/infinimesh/docs" target="_blank" style="text-decoration: none">Documentation</a> will follow ASAP, as well as more features. You can immediately start to play
+                      directly and use our
+                      <a href="https://infinitedevices.github.io/infinimesh/swagger-ui/" target="_blank" style="text-decoration: none">Swagger Playground</a>.
+                      <br><br>
+                      If you want your own namespace please get in touch over our <a href="contact.html" style="text-decoration: none">contact channels</a>.
+                  </h5>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
     </section>
-
+    <section class="what" style="margin-top: 400px;">
+    <br><br><br><br><br><br>
+    </section>
     <!--footer start here-->
-    <footer style="margin-top: 80px;">
+    <footer>
       <div class="container">
         <div class="footer-top">
           <div class="row">
@@ -226,7 +220,7 @@
                   <li> <a href="index.html#product">Product</a></li>
                   <li><a href="team.html">Team</a></li>
                   <li><a href="mvp.html">Playground</a></li>
-                   
+
                 </ul>
               </div>
             </div>
